@@ -1,7 +1,7 @@
 class UrlsController < ApplicationController
 
   def index
-    @url = Url.new
+    # @url = Url.new
     @urls = Url.all
   end
 
