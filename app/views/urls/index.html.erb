@@ -1,0 +1,8 @@
+<h2>URL Shortener</h2>
+<p>Enter the URL you wish to shorten.</p>
+
+<%= render 'form'%>
+<%@urls.each do |url| %>
+  <%= link_to "/urls/#{url.short_url}", "/urls/#{url.short_url}" %>
+  <hr>
+  <% end %>
